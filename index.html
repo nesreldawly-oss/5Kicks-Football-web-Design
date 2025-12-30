@@ -1,0 +1,23 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>5Kicks Football App Design</title>
+    </head>
+
+    <body>
+      <div id="root"></div>
+      <script>
+        window.addEventListener('error', function(event) {
+          const errorBox = document.createElement("div");
+          errorBox.style.cssText = "position: fixed; top: 0; left: 0; width: 100%; z-index: 99999; background: #fee2e2; color: #991b1b; padding: 24px; font-family: monospace; font-size: 16px; border-bottom: 4px solid #b91c1c;";
+          errorBox.innerHTML = '<strong>Global Error (index.html):</strong><br/>' + (event.message || 'Unknown error') + '<br/>' + (event.filename || '') + ':' + (event.lineno || '');
+          document.body.appendChild(errorBox);
+        });
+      </script>
+      <script type="module" src="/src/main.tsx"></script>
+    </body>
+  </html>
+  

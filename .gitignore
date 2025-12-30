@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnpm-store
+
+# Testing
+coverage/
+
+# Production
+build/
+dist/
+
+# Misc
+.DS_Store
+.env
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+
+# System Files
+Thumbs.db
+Desktop.ini
+
+# Backend (Java/Maven)
+target/
+*.class
+*.log
+*.ctxt
+.classpath
+.project
+.settings/
+*.jar
+*.war
+*.ear
